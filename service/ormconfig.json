@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "username": "postgres",
+  "password": "docker",
+  "database": "postgres",
+  "synchronize": true,
+  "logging": true,
+  "entities": [
+    "dist/entities/*"
+  ],
+  "migrations": [
+    "dist/migrations/*"
+  ],
+  "cli": {
+    "entitiesDir": "src/app/entities/*.ts",
+    "migrationsDir": "src/migrations"
+  }
+}
